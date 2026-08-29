@@ -1,0 +1,1654 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>الحركة الوطنية التونسية في العشرينات</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap');
+
+:root{
+    --primary:#8b1e2d;
+    --secondary:#c79a3b;
+    --dark:#1f2933;
+    --light:#f7f4ee;
+    --white:#ffffff;
+    --border:#ded7ca;
+    --blue:#245b7a;
+    --green:#2f6b4f;
+    --red:#a52834;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Cairo','Tajawal',sans-serif;
+    background:#ece9e2;
+    color:#1f2933;
+    line-height:2;
+}
+
+.container{
+    width:95%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+/* الترويسة */
+
+.header{
+    background:linear-gradient(135deg,#8b1e2d,#b52b3b);
+    color:white;
+    border-radius:18px 18px 0 0;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+
+.header h1{
+    margin:10px 0;
+    font-size:32px;
+}
+
+.header h2{
+    margin:5px 0;
+    font-size:20px;
+    font-weight:500;
+}
+
+.header-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;
+    background:#fff;
+    color:#222;
+    padding:20px;
+    border:1px solid var(--border);
+    border-top:none;
+}
+
+.info-box{
+    background:#f8f5ef;
+    border-right:5px solid var(--primary);
+    padding:12px;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* الأقسام */
+
+.section{
+    background:white;
+    margin-top:25px;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.section-title{
+    background:var(--primary);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.sub-title{
+    color:var(--primary);
+    font-size:20px;
+    font-weight:800;
+    border-bottom:2px solid var(--secondary);
+    padding-bottom:8px;
+    margin-top:25px;
+}
+
+.highlight{
+    background:#fff7df;
+    border-right:5px solid var(--secondary);
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.objectives{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+}
+
+.objective-box{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px;
+    background:#fafafa;
+}
+
+.objective-box h3{
+    margin-top:0;
+    color:var(--primary);
+}
+
+ul{
+    padding-right:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* المفاهيم */
+
+.concepts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.concept{
+    background:#f7f4ee;
+    padding:18px;
+    border-radius:10px;
+    border-top:5px solid var(--primary);
+}
+
+.concept strong{
+    color:var(--primary);
+}
+
+/* الخط الزمني */
+
+.timeline{
+    position:relative;
+    margin:40px 10px;
+    padding:20px 0;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0;
+    width:100%;
+    height:5px;
+    background:var(--primary);
+    border-radius:10px;
+}
+
+.timeline-items{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    position:relative;
+    flex-wrap:wrap;
+}
+
+.timeline-item{
+    position:relative;
+    flex:1;
+    min-width:150px;
+    text-align:center;
+    z-index:1;
+}
+
+.timeline-dot{
+    width:24px;
+    height:24px;
+    background:var(--secondary);
+    border:4px solid var(--primary);
+    border-radius:50%;
+    margin:0 auto 15px;
+}
+
+.timeline-card{
+    background:#fff;
+    border:1px solid var(--border);
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+.year{
+    color:var(--primary);
+    font-weight:800;
+    font-size:19px;
+}
+
+/* جدول */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:var(--primary);
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid var(--border);
+    padding:12px;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f8f7f4;
+}
+
+/* أنشطة */
+
+.activity{
+    background:#f5f8fa;
+    border:2px dashed var(--blue);
+    padding:20px;
+    border-radius:12px;
+    margin:18px 0;
+}
+
+.activity h3{
+    color:var(--blue);
+    margin-top:0;
+}
+
+.question{
+    background:white;
+    padding:12px;
+    margin:10px 0;
+    border-radius:7px;
+    border-right:4px solid var(--blue);
+}
+
+/* خلاصة */
+
+.conclusion{
+    background:linear-gradient(135deg,#f8efe2,#fff);
+    border-right:7px solid var(--secondary);
+    padding:25px;
+    border-radius:10px;
+    font-size:17px;
+}
+
+/* زر الطباعة */
+
+.print-btn{
+    display:block;
+    margin:30px auto;
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    background:var(--primary);
+    color:white;
+    font-family:inherit;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.print-btn:hover{
+    background:#651420;
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+    padding:20px;
+    color:#666;
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    .header h1{
+        font-size:24px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .timeline::before{
+        display:none;
+    }
+
+    .timeline-items{
+        display:block;
+    }
+
+    .timeline-item{
+        margin-bottom:20px;
+    }
+}
+
+@media print{
+
+    body{
+        background:white;
+    }
+
+    .container{
+        width:100%;
+        margin:0;
+    }
+
+    .section{
+        box-shadow:none;
+        page-break-inside:avoid;
+    }
+
+    .print-btn{
+        display:none;
+    }
+}
+</style></head><body><div class="container"><!-- الترويسة --><header class="header"><h1>الحركة الوطنية التونسية في العشرينات</h1>
+
+<h2>محور: تونس والعالم من الحرب العالمية الأولى إلى الحرب العالمية الثانية</h2>
+
+</header><div class="header-info"><div class="info-box">
+    <strong>المادة:</strong> التاريخ
+</div>
+
+<div class="info-box">
+    <strong>المستوى:</strong> التاسعة أساسي
+</div>
+
+<div class="info-box">
+    <strong>إعداد:</strong> الأستاذ رياض سليمي
+</div>
+
+<div class="info-box">
+    <strong>السنة الدراسية:</strong> 2026 / 2027
+</div>
+
+<div class="info-box">
+    <strong>المرجع:</strong> البرنامج الرسمي لوزارة التربية بالجمهورية التونسية
+</div>
+
+</div><!-- الأهداف --><section class="section"><div class="section-title">
+الأهداف التعليمية
+</div><div class="objectives"><div class="objective-box"><h3>الأهداف المعرفية</h3><ul>
+<li>التعرف إلى الظروف الداخلية التي ساعدت على تطور الحركة الوطنية التونسية في العشرينات.</li><li>تفسير تأثير نتائج الحرب العالمية الأولى في المجتمع التونسي.</li><li>التعرف إلى دور النخبة المثقفة في بعث العمل الوطني.</li><li>إبراز تأثير الظرفية العالمية وحركات التحرر في تطور الوعي الوطني.</li><li>التعرف إلى الحزب الحر الدستوري التونسي وبرنامجه السياسي.</li><li>التعرف إلى تجربة جامعة عموم العملة التونسية ودورها النقابي والوطني.</li></ul></div><div class="objective-box"><h3>الأهداف المهارية</h3><ul><li>استخراج المعلومات من النصوص والوثائق التاريخية.</li><li>ترتيب الأحداث التاريخية وفق تسلسل زمني.</li><li>إنجاز سلم زمني يبرز أهم مراحل النضال الوطني خلال العشرينات.</li><li>المقارنة بين النضال السياسي والنضال النقابي.</li><li>تفسير العلاقة بين الظروف الداخلية والظرفية العالمية وتطور الحركة الوطنية.</li><li>تنمية القدرة على التحليل والتركيب والاستنتاج.</li></ul></div><div class="objective-box"><h3>الأهداف السلوكية والقيمية</h3><ul><li>تنمية الاعتزاز بتاريخ تونس ونضالات الشعب التونسي.</li><li>ترسيخ قيم الحرية والعدالة والكرامة.</li><li>تقدير تضحيات الوطنيين التونسيين في مقاومة الاستعمار.</li><li>التشبث بالحقوق والدفاع عنها بالوسائل السلمية والمشروعة.</li><li>تنمية روح المواطنة والانتماء الوطني.</li></ul></div></div></section><!-- المفاهيم --><section class="section"><div class="section-title">
+المفاهيم الأساسية
+</div><div class="concepts"><div class="concept">
+<strong>الحركة الوطنية:</strong>
+هي مجموع التحركات والتنظيمات السياسية والاجتماعية التي قادها التونسيون لمقاومة الاستعمار والمطالبة بالحقوق والحرية.
+</div><div class="concept">
+<strong>الحماية الفرنسية:</strong>
+نظام استعماري فرضته فرنسا على تونس منذ سنة 1881، مع الإبقاء شكليا على مؤسسات الدولة التونسية.
+</div><div class="concept">
+<strong>النضال السياسي:</strong>
+عمل منظم يهدف إلى المطالبة بالحقوق السياسية والوطنية عبر الأحزاب والعرائض والوفود والصحافة والاجتماعات.
+</div><div class="concept">
+<strong>النضال النقابي:</strong>
+دفاع العمال عن مصالحهم وحقوقهم المهنية والاجتماعية من خلال التنظيم النقابي والإضرابات والاحتجاجات.
+</div><div class="concept">
+<strong>تقرير المصير:</strong>
+حق الشعوب في اختيار نظامها السياسي وتحديد مستقبلها دون تدخل أو سيطرة أجنبية.
+</div><div class="concept">
+<strong>المعمرون:</strong>
+المستوطنون الأوروبيون، وخاصة الفرنسيون، الذين استقروا في تونس وتمتعوا بامتيازات اقتصادية واجتماعية وسياسية.
+</div></div></section><!-- المقدمة --><section class="section"><div class="section-title">
+المقدمة
+</div><p>
+أحدثت الحرب العالمية الأولى تحولات كبرى في العالم، ولم تكن تونس بمنأى عن نتائجها الاقتصادية والاجتماعية والسياسية. فقد تحمل التونسيون أعباء الحرب، وتدهورت أوضاعهم المعيشية، في حين استمر المستعمر الفرنسي في استغلال الثروات والبلاد لصالحه.
+</p><p>
+وفي المقابل، ساهم انتشار الأفكار الجديدة الداعية إلى الحرية وحق الشعوب في تقرير مصيرها، إلى جانب بروز نخبة تونسية مثقفة وذات تجربة نضالية، في تجدد العمل الوطني وتطوره خلال العشرينات.
+</p><div class="highlight"><strong>الإشكالية:</strong>
+
+كيف ساهمت الظروف الداخلية والظرفية العالمية في تطور الحركة الوطنية التونسية خلال العشرينات؟ وما أهم مظاهر النضال السياسي والنقابي ضد الاستعمار الفرنسي؟
+
+</div></section><!-- العنصر الأول --><section class="section"><div class="section-title">
+العنصر الأول: الظروف المساعدة على تطور العمل الوطني في العشرينات
+</div><h2 class="sub-title">
+1- الظروف الداخلية
+</h2><p>
+خرجت تونس من الحرب العالمية الأولى وهي تعاني من أوضاع اقتصادية واجتماعية صعبة. فقد ساهمت الحرب في زيادة أعباء السكان، وازدادت عملية استغلال الاقتصاد التونسي لخدمة مصالح الاستعمار الفرنسي.
+</p><ul><li>
+<strong>تردي الأوضاع الاقتصادية والاجتماعية:</strong>
+عرف التونسيون ارتفاعا في الأعباء الجبائية وتدهورا في مستوى العيش وانتشار البطالة والفقر والبؤس.
+</li><li>
+<strong>تزايد الاستيلاء على الأراضي الزراعية:</strong>
+استفاد المعمرون الأوروبيون من سياسة التوسع الاستعماري على حساب الفلاحين التونسيين، مما ساهم في إضعاف الفلاحة التونسية وتفاقم مشاكل الريف.
+</li><li>
+<strong>تحويل تونس إلى سوق للبضائع الفرنسية:</strong>
+عملت سلطات الحماية على ربط الاقتصاد التونسي بالاقتصاد الفرنسي، واستغلال الموارد التونسية لخدمة مصالح فرنسا، خاصة في مرحلة ما بعد الحرب.
+</li><li>
+<strong>التمييز بين التونسيين والمعمرين:</strong>
+تمتع المعمرون بامتيازات اقتصادية واجتماعية وإدارية، في حين عانى التونسيون من التهميش والإقصاء وعدم المساواة.
+</li></ul><h2 class="sub-title">
+بروز نخبة تونسية مثقفة
+</h2><p>
+ساهم ظهور نخبة تونسية تلقت تعليما حديثا، وكان لبعض أفرادها تكوين فرنسي، في نشر الوعي الوطني. وقد اكتسب عدد من الوطنيين تجربة نضالية قبل الحرب العالمية الأولى من خلال نشاط حركة الشباب التونسي.
+</p><p>
+ومن أبرز رموز هذه المرحلة عبد العزيز الثعالبي وعلي باش حامبة وغيرهما من الوطنيين الذين شاركوا في الدفاع عن مصالح التونسيين، وساهموا في تحركات احتجاجية بارزة مثل مقاطعة الترامواي وأحداث مقبرة الجلاز.
+</p><div class="highlight"><strong>استنتاج:</strong>
+
+ساهم تدهور الأوضاع الاقتصادية والاجتماعية، إلى جانب انتشار التمييز الاستعماري وبروز نخبة وطنية مثقفة، في توفير ظروف داخلية ساعدت على تجدد الحركة الوطنية بعد الحرب العالمية الأولى.
+
+</div><h2 class="sub-title">
+2- الظرفية العالمية
+</h2><p>
+لم يتطور العمل الوطني التونسي بمعزل عن الأحداث العالمية، بل تأثر بعدد من الأفكار والتحولات التي عرفها العالم إثر الحرب العالمية الأولى.
+</p><ul><li>
+<strong>مبادئ ويلسون الأربعة عشر:</strong>
+ساهمت المبادئ التي أعلنها الرئيس الأمريكي وودرو ويلسون، وخاصة ما تعلق بحق الشعوب في تقرير مصيرها، في نشر الأمل لدى الشعوب الخاضعة للاستعمار.
+</li><li>
+<strong>تأثر التونسيين بحركات التحرر:</strong>
+تابع الوطنيون التونسيون نضالات الشعوب في آسيا وإفريقيا والعالم العربي، واستلهموا منها أساليب مقاومة الاستعمار.
+</li><li>
+<strong>الثورة المصرية:</strong>
+كان للحركة الوطنية المصرية بقيادة سعد زغلول أثر معنوي مهم، خاصة بعد التطورات التي أدت إلى إلغاء الحماية البريطانية على مصر سنة 1922.
+</li></ul><div class="highlight"><strong>استنتاج:</strong>
+
+أدى انتشار أفكار الحرية وحق تقرير المصير ونجاح بعض الحركات الوطنية في العالم إلى تعزيز الأمل لدى الوطنيين التونسيين وإعطاء دفعة جديدة للنضال ضد الاستعمار.
+
+</div></section><!-- العنصر الثاني --><section class="section"><div class="section-title">
+العنصر الثاني: مظاهر تطور الحركة الوطنية ضد المستعمر الفرنسي
+</div><h2 class="sub-title">
+1- النضال السياسي
+</h2><p>
+استؤنف النشاط الوطني بعد الحرب العالمية الأولى، وعادت النخبة التونسية إلى تنظيم صفوفها من أجل الدفاع عن حقوق التونسيين والمطالبة بالإصلاحات السياسية والاجتماعية.
+</p><h3>أ- تأسيس الحزب الحر الدستوري التونسي</h3><p>
+تأسس الحزب الحر الدستوري التونسي في مارس سنة 1920 بمبادرة من عبد العزيز الثعالبي وعدد من الوطنيين. وقد مثل الحزب مرحلة جديدة في تطور الحركة الوطنية لأنه سعى إلى تنظيم العمل السياسي وجمع المطالب الوطنية في برنامج واضح.
+</p><h3>ب- برنامج الحزب</h3><p>
+استند البرنامج السياسي للحزب إلى الأفكار التي دافع عنها عبد العزيز الثعالبي، وخاصة في كتابه <strong>«تونس الشهيدة»</strong>، وتضمن مطالب سياسية واقتصادية واجتماعية.
+</p><ul><li>المطالبة بالفصل بين السلط.</li><li>تمكين التونسيين من المشاركة في الوظائف والإدارة.</li><li>المساواة في المرتبات بين التونسيين والفرنسيين عند تساوي الوظائف.</li><li>إقامة مجالس بلدية يشارك فيها التونسيون.</li><li>إقرار التعليم الإجباري للتونسيين.</li><li>ضمان حرية الصحافة والاجتماع.</li><li>المطالبة بتمثيل تونسي أوسع في مؤسسات الحكم.</li></ul><h3>ج- وسائل النضال السياسي</h3><ul><li>
+تقديم العرائض التي تضمنت مطالب التونسيين، ومن بينها عريضة قدمت إلى محمد الناصر باي يوم 18 جوان 1920.
+</li><li>
+إرسال وفود إلى فرنسا خلال الفترة الممتدة بين 1920 و1924 للتعريف بالقضية التونسية وعرض مطالب الحزب على الرأي العام والمسؤولين الفرنسيين.
+</li><li>
+الاعتماد على الصحافة والاجتماعات والاتصالات السياسية لنشر الوعي الوطني.
+</li></ul><h2 class="sub-title">
+2- النضال النقابي
+</h2><p>
+إلى جانب النضال السياسي، برز شكل جديد من المقاومة تمثل في النضال النقابي الذي جمع بين الدفاع عن الحقوق الاجتماعية للعمال ومقاومة التمييز الاستعماري.
+</p><h3>أ- تأسيس جامعة عموم العملة التونسية</h3><p>
+برز محمد علي الحامي كأحد أهم رموز الحركة النقابية الوطنية، وساهم في تأسيس <strong>جامعة عموم العملة التونسية</strong> بهدف تنظيم العمال التونسيين والدفاع عن حقوقهم وتحسين أوضاعهم المهنية والاجتماعية.
+</p><h3>ب- وسائل النضال النقابي</h3><ul><li>تنظيم الاحتجاجات والإضرابات.</li><li>الدفاع عن حقوق العمال التونسيين.</li><li>مواجهة التمييز الذي كان يعاني منه العمال مقارنة بالعمال الأوروبيين.</li><li>المساهمة في إضرابات وتحركات عمالية، خاصة في قطاعات الموانئ والنقل.</li></ul><h3>ج- رد فعل سلطات الحماية</h3><p>
+أثارت الحركة النقابية الوطنية مخاوف سلطات الحماية الفرنسية، فتمت ملاحقة عدد من قادتها ومحاكمتهم بتهمة التآمر على أمن الدولة.
+</p><p>
+وتعرض محمد علي الحامي ومختار العياري للنفي، في حين تعرض عدد من القيادات النقابية الأخرى للسجن. كما اتخذت سلطات الحماية إجراءات زجرية حدّت من حرية التعبير والاجتماع، وهو ما ساهم في دخول الحركة الوطنية مرحلة من الركود في نهاية العشرينات.
+</p><div class="highlight"><strong>استنتاج:</strong>
+
+تميزت الحركة الوطنية التونسية في العشرينات بتنوع أساليب النضال، حيث اعتمد الوطنيون النضال السياسي من خلال الحزب والعرائض والوفود، كما برز النضال النقابي للدفاع عن العمال وربط المطالب الاجتماعية بالقضية الوطنية.
+
+</div></section><!-- مقارنة --><section class="section"><div class="section-title">
+مقارنة بين أشكال النضال الوطني
+</div><table><tr>
+<th>وجه المقارنة</th>
+<th>النضال السياسي</th>
+<th>النضال النقابي</th>
+</tr><tr>
+<td>الإطار التنظيمي</td>
+<td>الحزب الحر الدستوري التونسي</td>
+<td>جامعة عموم العملة التونسية</td>
+</tr><tr>
+<td>أبرز الرموز</td>
+<td>عبد العزيز الثعالبي وعدد من الوطنيين</td>
+<td>محمد علي الحامي وعدد من القيادات النقابية</td>
+</tr><tr>
+<td>وسائل النضال</td>
+<td>العرائض، الوفود، الصحافة، الاجتماعات والمطالب السياسية</td>
+<td>الإضرابات، الاحتجاجات والتنظيم العمالي</td>
+</tr><tr>
+<td>الأهداف</td>
+<td>المطالبة بالإصلاحات والحقوق السياسية والوطنية</td>
+<td>الدفاع عن حقوق العمال وتحسين أوضاعهم والمساهمة في النضال الوطني</td>
+</tr></table></section><!-- السلم الزمني --><section class="section"><div class="section-title">
+سلم زمني لأهم محطات النضال الوطني خلال العشرينات
+</div><div class="timeline"><div class="timeline-items"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="year">مارس 1920</div>تأسيس الحزب الحر الدستوري التونسي.
+
+</div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="year">18 جوان 1920</div>تقديم عريضة تتضمن مطالب الوطنيين إلى محمد الناصر باي.
+
+</div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="year">1920 - 1924</div>إرسال وفود إلى باريس للتعريف بالقضية التونسية.
+
+</div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="year">1924</div>تطور النضال النقابي وبروز جامعة عموم العملة التونسية بقيادة محمد علي الحامي.
+
+</div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="year">نهاية العشرينات</div>تشديد القمع الاستعماري وتراجع النشاط الوطني بعد ملاحقة القيادات السياسية والنقابية.
+
+</div></div></div></div><div class="activity"><h3>نشاط زمني</h3><div class="question">
+أعد رسم السلم الزمني في كراسك ثم رتب الأحداث التالية ترتيبا زمنيا:
+</div><ul><li>تأسيس الحزب الحر الدستوري التونسي.</li><li>تقديم العريضة إلى محمد الناصر باي.</li><li>إرسال الوفود إلى باريس.</li><li>تأسيس جامعة عموم العملة التونسية.</li><li>ملاحقة قادة الحركة النقابية.</li></ul></div></section><!-- الخاتمة --><section class="section"><div class="section-title">
+الخاتمة
+</div><div class="conclusion">شهدت تونس خلال العشرينات مرحلة مهمة من تطور الحركة الوطنية. فقد ساهمت الأوضاع الاقتصادية والاجتماعية الصعبة، وسياسة الاستغلال والتمييز التي مارسها الاستعمار الفرنسي، في تنامي الشعور الوطني لدى التونسيين.
+
+كما ساعد انتشار أفكار الحرية وحق الشعوب في تقرير مصيرها، وتأثر الوطنيين بحركات التحرر في العالم، على تجدد النضال الوطني.
+
+وتجسد هذا التطور في ظهور تنظيمات سياسية ونقابية مثل الحزب الحر الدستوري التونسي وجامعة عموم العملة التونسية، اللذين اعتمدا أساليب متعددة للدفاع عن حقوق التونسيين ومقاومة الاستعمار.
+
+ورغم القمع الذي مارسته سلطات الحماية وما نتج عنه من ركود نسبي في نهاية العشرينات، فإن هذه المرحلة شكلت محطة أساسية في تاريخ الحركة الوطنية التونسية ومهدت للمراحل اللاحقة من النضال من أجل الاستقلال.
+
+</div></section><!-- الأنشطة المهارية --><section class="section"><div class="section-title">
+الأنشطة المهارية
+</div><div class="activity"><h3>النشاط الأول: تحليل الأسباب والنتائج</h3><div class="question">
+اعتمد على الدرس وأتمم الجدول التالي:
+</div><table><tr>
+<th>العوامل الداخلية</th>
+<th>العوامل الخارجية</th>
+<th>النتيجة</th>
+</tr><tr>
+<td>........................................</td>
+<td>........................................</td>
+<td rowspan="3">تطور الحركة الوطنية التونسية في العشرينات</td>
+</tr><tr>
+<td>........................................</td>
+<td>........................................</td>
+</tr><tr>
+<td>........................................</td>
+<td>........................................</td>
+</tr></table></div><div class="activity"><h3>النشاط الثاني: المقارنة</h3><div class="question">
+قارن بين النضال السياسي والنضال النقابي من حيث التنظيم والقيادات والوسائل والأهداف.
+</div></div><div class="activity"><h3>النشاط الثالث: ترتيب الأحداث</h3><div class="question">رتب الأحداث التالية زمنيا ثم ضع التاريخ المناسب أمام كل حدث:
+
+</div><ul><li>تأسيس جامعة عموم العملة التونسية.</li><li>تأسيس الحزب الحر الدستوري التونسي.</li><li>إرسال وفود إلى باريس.</li><li>تقديم العريضة إلى محمد الناصر باي.</li></ul></div><div class="activity"><h3>النشاط الرابع: دراسة شخصية تاريخية</h3><div class="question">اختر إحدى الشخصيات التالية:
+
+<strong>عبد العزيز الثعالبي – علي باش حامبة – محمد علي الحامي</strong>
+
+ثم أنجز بطاقة تعريف تتضمن:
+
+</div><ul><li>الاسم.</li><li>الدور في الحركة الوطنية.</li><li>نوع النضال الذي ساهم فيه.</li><li>أهم إنجازاته أو تحركاته.</li></ul></div><div class="activity"><h3>النشاط الخامس: نشاط تركيبي</h3><div class="question">اعتمادا على مكتسباتك، حرر فقرة تاريخية تبرز فيها:
+
+<strong>
+الظروف التي ساعدت على تطور الحركة الوطنية التونسية في العشرينات، ثم بين أهم مظاهر النضال السياسي والنقابي ضد الاستعمار الفرنسي.
+</strong></div></div></section><button class="print-btn" onclick="window.print()">🖨️ طباعة الدرس
+
+</button><footer>إعداد الأستاذ رياض سليمي | السنة الدراسية 2026 / 2027
+
+</footer></div></body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </html>فيما يلي كود HTML كامل وجاهز لدرس الحركة الوطنية التونسية في العشرينات، بصيغة صفحة تعليمية عربية احترافية ومتجاوبة، يتضمن: الترويسة، الأهداف، المفاهيم، المقدمة والإشكالية، شرح العناصر، السلم الزمني، الخاتمة، والأنشطة المهارية.
+Écriture
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>الحركة الوطنية التونسية في العشرينات</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap');
+
+:root{
+    --primary:#8b1e2d;
+    --secondary:#c79a3b;
+    --dark:#1f2933;
+    --light:#f7f4ee;
+    --white:#ffffff;
+    --border:#ded7ca;
+    --blue:#245b7a;
+    --green:#2f6b4f;
+    --red:#a52834;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Cairo','Tajawal',sans-serif;
+    background:#ece9e2;
+    color:#1f2933;
+    line-height:2;
+}
+
+.container{
+    width:95%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+/* الترويسة */
+
+.header{
+    background:linear-gradient(135deg,#8b1e2d,#b52b3b);
+    color:white;
+    border-radius:18px 18px 0 0;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+
+.header h1{
+    margin:10px 0;
+    font-size:32px;
+}
+
+.header h2{
+    margin:5px 0;
+    font-size:20px;
+    font-weight:500;
+}
+
+.header-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;
+    background:#fff;
+    color:#222;
+    padding:20px;
+    border:1px solid var(--border);
+    border-top:none;
+}
+
+.info-box{
+    background:#f8f5ef;
+    border-right:5px solid var(--primary);
+    padding:12px;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* الأقسام */
+
+.section{
+    background:white;
+    margin-top:25px;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.section-title{
+    background:var(--primary);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.sub-title{
+    color:var(--primary);
+    font-size:20px;
+    font-weight:800;
+    border-bottom:2px solid var(--secondary);
+    padding-bottom:8px;
+    margin-top:25px;
+}
+
+.highlight{
+    background:#fff7df;
+    border-right:5px solid var(--secondary);
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.objectives{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+}
+
+.objective-box{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px;
+    background:#fafafa;
+}
+
+.objective-box h3{
+    margin-top:0;
+    color:var(--primary);
+}
+
+ul{
+    padding-right:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* المفاهيم */
+
+.concepts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.concept{
+    background:#f7f4ee;
+    padding:18px;
+    border-radius:10px;
+    border-top:5px solid var(--primary);
+}
+
+.concept strong{
+    color:var(--primary);
+}
+
+/* الخط الزمني */
+
+.timeline{
+    position:relative;
+    margin:40px 10px;
+    padding:20px 0;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0;
+    width:100%;
+    height:5px;
+    background:var(--primary);
+    border-radius:10px;
+}
+
+.timeline-items{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    position:relative;
+    flex-wrap:wrap;
+}
+
+.timeline-item{
+    position:relative;
+    flex:1;
+    min-width:150px;
+    text-align:center;
+    z-index:1;
+}
+
+.timeline-dot{
+    width:24px;
+    height:24px;
+    background:var(--secondary);
+    border:4px solid var(--primary);
+    border-radius:50%;
+    margin:0 auto 15px;
+}
+
+.timeline-card{
+    background:#fff;
+    border:1px solid var(--border);
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+.year{
+    color:var(--primary);
+    font-weight:800;
+    font-size:19px;
+}
+
+/* جدول */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:var(--primary);
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid var(--border);
+    padding:12px;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f8f7f4;
+}
+
+/* أنشطة */
+
+.activity{
+    background:#f5f8fa;
+    border:2px dashed var(--blue);
+    padding:20px;
+    border-radius:12px;
+    margin:18px 0;
+}
+
+.activity h3{
+    color:var(--blue);
+    margin-top:0;
+}
+
+.question{
+    background:white;
+    padding:12px;
+    margin:10px 0;
+    border-radius:7px;
+    border-right:4px solid var(--blue);
+}
+
+/* خلاصة */
+
+.conclusion{
+    background:linear-gradient(135deg,#f8efe2,#fff);
+    border-right:7px solid var(--secondary);
+    padding:25px;
+    border-radius:10px;
+    font-size:17px;
+}
+
+/* زر الطباعة */
+
+.print-btn{
+    display:block;
+    margin:30px auto;
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    background:var(--primary);
+    color:white;
+    font-family:inherit;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.print-btn:hover{
+    background:#651420;
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+    padding:20px;
+    color:#666;
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    .header h1{
+        font-size:24px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .timeline::before{
+        display:none;
+    }
+
+    .timeline-items{
+        display:block;
+    }
+
+    .timeline-item{
+        margin-bottom:20px;
+    }
+}
+
+@media print{
+
+    body{
+        background:white;
+    }
+
+    .container{
+        width:100%;
+        margin:0;
+    }
+
+    .section{
+        box-shadow:none;
+        page-break-inside:avoid;
+    }
+
+    .print-btn{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- الترويسة -->
+
+<header class="header">
+
+    <h1>الحركة الوطنية التونسية في العشرينات</h1>
+
+    <h2>محور: تونس والعالم من الحرب العالمية الأولى إلى الحرب العالمية الثانية</h2>
+
+</header>
+
+<div class="header-info">
+
+    <div class="info-box">
+        <strong>المادة:</strong> التاريخ
+    </div>
+
+    <div class="info-box">
+        <strong>المستوى:</strong> التاسعة أساسي
+    </div>
+
+    <div class="info-box">
+        <strong>إعداد:</strong> الأستاذ رياض سليمي
+    </div>
+
+    <div class="info-box">
+        <strong>السنة الدراسية:</strong> 2026 / 2027
+    </div>
+
+    <div class="info-box">
+        <strong>المرجع:</strong> البرنامج الرسمي لوزارة التربية بالجمهورية التونسية
+    </div>
+
+</div>
+
+
+<!-- الأهداف -->
+
+<section class="section">
+
+<div class="section-title">
+الأهداف التعليمية
+</div>
+
+<div class="objectives">
+
+<div class="objective-box">
+
+<h3>الأهداف المعرفية</h3>
+
+<ul>
+<li>التعرف إلى الظروف الداخلية التي ساعدت على تطور الحركة الوطنية التونسية في العشرينات.</li>
+
+<li>تفسير تأثير نتائج الحرب العالمية الأولى في المجتمع التونسي.</li>
+
+<li>التعرف إلى دور النخبة المثقفة في بعث العمل الوطني.</li>
+
+<li>إبراز تأثير الظرفية العالمية وحركات التحرر في تطور الوعي الوطني.</li>
+
+<li>التعرف إلى الحزب الحر الدستوري التونسي وبرنامجه السياسي.</li>
+
+<li>التعرف إلى تجربة جامعة عموم العملة التونسية ودورها النقابي والوطني.</li>
+
+</ul>
+
+</div>
+
+
+<div class="objective-box">
+
+<h3>الأهداف المهارية</h3>
+
+<ul>
+
+<li>استخراج المعلومات من النصوص والوثائق التاريخية.</li>
+
+<li>ترتيب الأحداث التاريخية وفق تسلسل زمني.</li>
+
+<li>إنجاز سلم زمني يبرز أهم مراحل النضال الوطني خلال العشرينات.</li>
+
+<li>المقارنة بين النضال السياسي والنضال النقابي.</li>
+
+<li>تفسير العلاقة بين الظروف الداخلية والظرفية العالمية وتطور الحركة الوطنية.</li>
+
+<li>تنمية القدرة على التحليل والتركيب والاستنتاج.</li>
+
+</ul>
+
+</div>
+
+
+<div class="objective-box">
+
+<h3>الأهداف السلوكية والقيمية</h3>
+
+<ul>
+
+<li>تنمية الاعتزاز بتاريخ تونس ونضالات الشعب التونسي.</li>
+
+<li>ترسيخ قيم الحرية والعدالة والكرامة.</li>
+
+<li>تقدير تضحيات الوطنيين التونسيين في مقاومة الاستعمار.</li>
+
+<li>التشبث بالحقوق والدفاع عنها بالوسائل السلمية والمشروعة.</li>
+
+<li>تنمية روح المواطنة والانتماء الوطني.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- المفاهيم -->
+
+<section class="section">
+
+<div class="section-title">
+المفاهيم الأساسية
+</div>
+
+<div class="concepts">
+
+<div class="concept">
+<strong>الحركة الوطنية:</strong>
+هي مجموع التحركات والتنظيمات السياسية والاجتماعية التي قادها التونسيون لمقاومة الاستعمار والمطالبة بالحقوق والحرية.
+</div>
+
+<div class="concept">
+<strong>الحماية الفرنسية:</strong>
+نظام استعماري فرضته فرنسا على تونس منذ سنة 1881، مع الإبقاء شكليا على مؤسسات الدولة التونسية.
+</div>
+
+<div class="concept">
+<strong>النضال السياسي:</strong>
+عمل منظم يهدف إلى المطالبة بالحقوق السياسية والوطنية عبر الأحزاب والعرائض والوفود والصحافة والاجتماعات.
+</div>
+
+<div class="concept">
+<strong>النضال النقابي:</strong>
+دفاع العمال عن مصالحهم وحقوقهم المهنية والاجتماعية من خلال التنظيم النقابي والإضرابات والاحتجاجات.
+</div>
+
+<div class="concept">
+<strong>تقرير المصير:</strong>
+حق الشعوب في اختيار نظامها السياسي وتحديد مستقبلها دون تدخل أو سيطرة أجنبية.
+</div>
+
+<div class="concept">
+<strong>المعمرون:</strong>
+المستوطنون الأوروبيون، وخاصة الفرنسيون، الذين استقروا في تونس وتمتعوا بامتيازات اقتصادية واجتماعية وسياسية.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- المقدمة -->
+
+<section class="section">
+
+<div class="section-title">
+المقدمة
+</div>
+
+<p>
+أحدثت الحرب العالمية الأولى تحولات كبرى في العالم، ولم تكن تونس بمنأى عن نتائجها الاقتصادية والاجتماعية والسياسية. فقد تحمل التونسيون أعباء الحرب، وتدهورت أوضاعهم المعيشية، في حين استمر المستعمر الفرنسي في استغلال الثروات والبلاد لصالحه.
+</p>
+
+<p>
+وفي المقابل، ساهم انتشار الأفكار الجديدة الداعية إلى الحرية وحق الشعوب في تقرير مصيرها، إلى جانب بروز نخبة تونسية مثقفة وذات تجربة نضالية، في تجدد العمل الوطني وتطوره خلال العشرينات.
+</p>
+
+<div class="highlight">
+
+<strong>الإشكالية:</strong>
+
+كيف ساهمت الظروف الداخلية والظرفية العالمية في تطور الحركة الوطنية التونسية خلال العشرينات؟ وما أهم مظاهر النضال السياسي والنقابي ضد الاستعمار الفرنسي؟
+
+</div>
+
+</section>
+
+
+<!-- العنصر الأول -->
+
+<section class="section">
+
+<div class="section-title">
+العنصر الأول: الظروف المساعدة على تطور العمل الوطني في العشرينات
+</div>
+
+
+<h2 class="sub-title">
+1- الظروف الداخلية
+</h2>
+
+<p>
+خرجت تونس من الحرب العالمية الأولى وهي تعاني من أوضاع اقتصادية واجتماعية صعبة. فقد ساهمت الحرب في زيادة أعباء السكان، وازدادت عملية استغلال الاقتصاد التونسي لخدمة مصالح الاستعمار الفرنسي.
+</p>
+
+<ul>
+
+<li>
+<strong>تردي الأوضاع الاقتصادية والاجتماعية:</strong>
+عرف التونسيون ارتفاعا في الأعباء الجبائية وتدهورا في مستوى العيش وانتشار البطالة والفقر والبؤس.
+</li>
+
+<li>
+<strong>تزايد الاستيلاء على الأراضي الزراعية:</strong>
+استفاد المعمرون الأوروبيون من سياسة التوسع الاستعماري على حساب الفلاحين التونسيين، مما ساهم في إضعاف الفلاحة التونسية وتفاقم مشاكل الريف.
+</li>
+
+<li>
+<strong>تحويل تونس إلى سوق للبضائع الفرنسية:</strong>
+عملت سلطات الحماية على ربط الاقتصاد التونسي بالاقتصاد الفرنسي، واستغلال الموارد التونسية لخدمة مصالح فرنسا، خاصة في مرحلة ما بعد الحرب.
+</li>
+
+<li>
+<strong>التمييز بين التونسيين والمعمرين:</strong>
+تمتع المعمرون بامتيازات اقتصادية واجتماعية وإدارية، في حين عانى التونسيون من التهميش والإقصاء وعدم المساواة.
+</li>
+
+</ul>
+
+
+<h2 class="sub-title">
+بروز نخبة تونسية مثقفة
+</h2>
+
+<p>
+ساهم ظهور نخبة تونسية تلقت تعليما حديثا، وكان لبعض أفرادها تكوين فرنسي، في نشر الوعي الوطني. وقد اكتسب عدد من الوطنيين تجربة نضالية قبل الحرب العالمية الأولى من خلال نشاط حركة الشباب التونسي.
+</p>
+
+<p>
+ومن أبرز رموز هذه المرحلة عبد العزيز الثعالبي وعلي باش حامبة وغيرهما من الوطنيين الذين شاركوا في الدفاع عن مصالح التونسيين، وساهموا في تحركات احتجاجية بارزة مثل مقاطعة الترامواي وأحداث مقبرة الجلاز.
+</p>
+
+<div class="highlight">
+
+<strong>استنتاج:</strong>
+
+ساهم تدهور الأوضاع الاقتصادية والاجتماعية، إلى جانب انتشار التمييز الاستعماري وبروز نخبة وطنية مثقفة، في توفير ظروف داخلية ساعدت على تجدد الحركة الوطنية بعد الحرب العالمية الأولى.
+
+</div>
+
+
+<h2 class="sub-title">
+2- الظرفية العالمية
+</h2>
+
+<p>
+لم يتطور العمل الوطني التونسي بمعزل عن الأحداث العالمية، بل تأثر بعدد من الأفكار والتحولات التي عرفها العالم إثر الحرب العالمية الأولى.
+</p>
+
+<ul>
+
+<li>
+<strong>مبادئ ويلسون الأربعة عشر:</strong>
+ساهمت المبادئ التي أعلنها الرئيس الأمريكي وودرو ويلسون، وخاصة ما تعلق بحق الشعوب في تقرير مصيرها، في نشر الأمل لدى الشعوب الخاضعة للاستعمار.
+</li>
+
+<li>
+<strong>تأثر التونسيين بحركات التحرر:</strong>
+تابع الوطنيون التونسيون نضالات الشعوب في آسيا وإفريقيا والعالم العربي، واستلهموا منها أساليب مقاومة الاستعمار.
+</li>
+
+<li>
+<strong>الثورة المصرية:</strong>
+كان للحركة الوطنية المصرية بقيادة سعد زغلول أثر معنوي مهم، خاصة بعد التطورات التي أدت إلى إلغاء الحماية البريطانية على مصر سنة 1922.
+</li>
+
+</ul>
+
+<div class="highlight">
+
+<strong>استنتاج:</strong>
+
+أدى انتشار أفكار الحرية وحق تقرير المصير ونجاح بعض الحركات الوطنية في العالم إلى تعزيز الأمل لدى الوطنيين التونسيين وإعطاء دفعة جديدة للنضال ضد الاستعمار.
+
+</div>
+
+</section>
+
+
+<!-- العنصر الثاني -->
+
+<section class="section">
+
+<div class="section-title">
+العنصر الثاني: مظاهر تطور الحركة الوطنية ضد المستعمر الفرنسي
+</div>
+
+
+<h2 class="sub-title">
+1- النضال السياسي
+</h2>
+
+<p>
+استؤنف النشاط الوطني بعد الحرب العالمية الأولى، وعادت النخبة التونسية إلى تنظيم صفوفها من أجل الدفاع عن حقوق التونسيين والمطالبة بالإصلاحات السياسية والاجتماعية.
+</p>
+
+<h3>أ- تأسيس الحزب الحر الدستوري التونسي</h3>
+
+<p>
+تأسس الحزب الحر الدستوري التونسي في مارس سنة 1920 بمبادرة من عبد العزيز الثعالبي وعدد من الوطنيين. وقد مثل الحزب مرحلة جديدة في تطور الحركة الوطنية لأنه سعى إلى تنظيم العمل السياسي وجمع المطالب الوطنية في برنامج واضح.
+</p>
+
+<h3>ب- برنامج الحزب</h3>
+
+<p>
+استند البرنامج السياسي للحزب إلى الأفكار التي دافع عنها عبد العزيز الثعالبي، وخاصة في كتابه <strong>«تونس الشهيدة»</strong>، وتضمن مطالب سياسية واقتصادية واجتماعية.
+</p>
+
+<ul>
+
+<li>المطالبة بالفصل بين السلط.</li>
+
+<li>تمكين التونسيين من المشاركة في الوظائف والإدارة.</li>
+
+<li>المساواة في المرتبات بين التونسيين والفرنسيين عند تساوي الوظائف.</li>
+
+<li>إقامة مجالس بلدية يشارك فيها التونسيون.</li>
+
+<li>إقرار التعليم الإجباري للتونسيين.</li>
+
+<li>ضمان حرية الصحافة والاجتماع.</li>
+
+<li>المطالبة بتمثيل تونسي أوسع في مؤسسات الحكم.</li>
+
+</ul>
+
+<h3>ج- وسائل النضال السياسي</h3>
+
+<ul>
+
+<li>
+تقديم العرائض التي تضمنت مطالب التونسيين، ومن بينها عريضة قدمت إلى محمد الناصر باي يوم 18 جوان 1920.
+</li>
+
+<li>
+إرسال وفود إلى فرنسا خلال الفترة الممتدة بين 1920 و1924 للتعريف بالقضية التونسية وعرض مطالب الحزب على الرأي العام والمسؤولين الفرنسيين.
+</li>
+
+<li>
+الاعتماد على الصحافة والاجتماعات والاتصالات السياسية لنشر الوعي الوطني.
+</li>
+
+</ul>
+
+
+<h2 class="sub-title">
+2- النضال النقابي
+</h2>
+
+<p>
+إلى جانب النضال السياسي، برز شكل جديد من المقاومة تمثل في النضال النقابي الذي جمع بين الدفاع عن الحقوق الاجتماعية للعمال ومقاومة التمييز الاستعماري.
+</p>
+
+<h3>أ- تأسيس جامعة عموم العملة التونسية</h3>
+
+<p>
+برز محمد علي الحامي كأحد أهم رموز الحركة النقابية الوطنية، وساهم في تأسيس <strong>جامعة عموم العملة التونسية</strong> بهدف تنظيم العمال التونسيين والدفاع عن حقوقهم وتحسين أوضاعهم المهنية والاجتماعية.
+</p>
+
+<h3>ب- وسائل النضال النقابي</h3>
+
+<ul>
+
+<li>تنظيم الاحتجاجات والإضرابات.</li>
+
+<li>الدفاع عن حقوق العمال التونسيين.</li>
+
+<li>مواجهة التمييز الذي كان يعاني منه العمال مقارنة بالعمال الأوروبيين.</li>
+
+<li>المساهمة في إضرابات وتحركات عمالية، خاصة في قطاعات الموانئ والنقل.</li>
+
+</ul>
+
+<h3>ج- رد فعل سلطات الحماية</h3>
+
+<p>
+أثارت الحركة النقابية الوطنية مخاوف سلطات الحماية الفرنسية، فتمت ملاحقة عدد من قادتها ومحاكمتهم بتهمة التآمر على أمن الدولة.
+</p>
+
+<p>
+وتعرض محمد علي الحامي ومختار العياري للنفي، في حين تعرض عدد من القيادات النقابية الأخرى للسجن. كما اتخذت سلطات الحماية إجراءات زجرية حدّت من حرية التعبير والاجتماع، وهو ما ساهم في دخول الحركة الوطنية مرحلة من الركود في نهاية العشرينات.
+</p>
+
+
+<div class="highlight">
+
+<strong>استنتاج:</strong>
+
+تميزت الحركة الوطنية التونسية في العشرينات بتنوع أساليب النضال، حيث اعتمد الوطنيون النضال السياسي من خلال الحزب والعرائض والوفود، كما برز النضال النقابي للدفاع عن العمال وربط المطالب الاجتماعية بالقضية الوطنية.
+
+</div>
+
+</section>
+
+
+<!-- مقارنة -->
+
+<section class="section">
+
+<div class="section-title">
+مقارنة بين أشكال النضال الوطني
+</div>
+
+<table>
+
+<tr>
+<th>وجه المقارنة</th>
+<th>النضال السياسي</th>
+<th>النضال النقابي</th>
+</tr>
+
+<tr>
+<td>الإطار التنظيمي</td>
+<td>الحزب الحر الدستوري التونسي</td>
+<td>جامعة عموم العملة التونسية</td>
+</tr>
+
+<tr>
+<td>أبرز الرموز</td>
+<td>عبد العزيز الثعالبي وعدد من الوطنيين</td>
+<td>محمد علي الحامي وعدد من القيادات النقابية</td>
+</tr>
+
+<tr>
+<td>وسائل النضال</td>
+<td>العرائض، الوفود، الصحافة، الاجتماعات والمطالب السياسية</td>
+<td>الإضرابات، الاحتجاجات والتنظيم العمالي</td>
+</tr>
+
+<tr>
+<td>الأهداف</td>
+<td>المطالبة بالإصلاحات والحقوق السياسية والوطنية</td>
+<td>الدفاع عن حقوق العمال وتحسين أوضاعهم والمساهمة في النضال الوطني</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- السلم الزمني -->
+
+<section class="section">
+
+<div class="section-title">
+سلم زمني لأهم محطات النضال الوطني خلال العشرينات
+</div>
+
+<div class="timeline">
+
+<div class="timeline-items">
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="year">مارس 1920</div>
+
+تأسيس الحزب الحر الدستوري التونسي.
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="year">18 جوان 1920</div>
+
+تقديم عريضة تتضمن مطالب الوطنيين إلى محمد الناصر باي.
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="year">1920 - 1924</div>
+
+إرسال وفود إلى باريس للتعريف بالقضية التونسية.
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="year">1924</div>
+
+تطور النضال النقابي وبروز جامعة عموم العملة التونسية بقيادة محمد علي الحامي.
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="year">نهاية العشرينات</div>
+
+تشديد القمع الاستعماري وتراجع النشاط الوطني بعد ملاحقة القيادات السياسية والنقابية.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<h3>نشاط زمني</h3>
+
+<div class="question">
+أعد رسم السلم الزمني في كراسك ثم رتب الأحداث التالية ترتيبا زمنيا:
+</div>
+
+<ul>
+
+<li>تأسيس الحزب الحر الدستوري التونسي.</li>
+
+<li>تقديم العريضة إلى محمد الناصر باي.</li>
+
+<li>إرسال الوفود إلى باريس.</li>
+
+<li>تأسيس جامعة عموم العملة التونسية.</li>
+
+<li>ملاحقة قادة الحركة النقابية.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- الخاتمة -->
+
+<section class="section">
+
+<div class="section-title">
+الخاتمة
+</div>
+
+<div class="conclusion">
+
+شهدت تونس خلال العشرينات مرحلة مهمة من تطور الحركة الوطنية. فقد ساهمت الأوضاع الاقتصادية والاجتماعية الصعبة، وسياسة الاستغلال والتمييز التي مارسها الاستعمار الفرنسي، في تنامي الشعور الوطني لدى التونسيين.
+
+كما ساعد انتشار أفكار الحرية وحق الشعوب في تقرير مصيرها، وتأثر الوطنيين بحركات التحرر في العالم، على تجدد النضال الوطني.
+
+وتجسد هذا التطور في ظهور تنظيمات سياسية ونقابية مثل الحزب الحر الدستوري التونسي وجامعة عموم العملة التونسية، اللذين اعتمدا أساليب متعددة للدفاع عن حقوق التونسيين ومقاومة الاستعمار.
+
+ورغم القمع الذي مارسته سلطات الحماية وما نتج عنه من ركود نسبي في نهاية العشرينات، فإن هذه المرحلة شكلت محطة أساسية في تاريخ الحركة الوطنية التونسية ومهدت للمراحل اللاحقة من النضال من أجل الاستقلال.
+
+</div>
+
+</section>
+
+
+<!-- الأنشطة المهارية -->
+
+<section class="section">
+
+<div class="section-title">
+الأنشطة المهارية
+</div>
+
+
+<div class="activity">
+
+<h3>النشاط الأول: تحليل الأسباب والنتائج</h3>
+
+<div class="question">
+اعتمد على الدرس وأتمم الجدول التالي:
+</div>
+
+<table>
+
+<tr>
+<th>العوامل الداخلية</th>
+<th>العوامل الخارجية</th>
+<th>النتيجة</th>
+</tr>
+
+<tr>
+<td>........................................</td>
+<td>........................................</td>
+<td rowspan="3">تطور الحركة الوطنية التونسية في العشرينات</td>
+</tr>
+
+<tr>
+<td>........................................</td>
+<td>........................................</td>
+</tr>
+
+<tr>
+<td>........................................</td>
+<td>........................................</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="activity">
+
+<h3>النشاط الثاني: المقارنة</h3>
+
+<div class="question">
+قارن بين النضال السياسي والنضال النقابي من حيث التنظيم والقيادات والوسائل والأهداف.
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<h3>النشاط الثالث: ترتيب الأحداث</h3>
+
+<div class="question">
+
+رتب الأحداث التالية زمنيا ثم ضع التاريخ المناسب أمام كل حدث:
+
+</div>
+
+<ul>
+
+<li>تأسيس جامعة عموم العملة التونسية.</li>
+
+<li>تأسيس الحزب الحر الدستوري التونسي.</li>
+
+<li>إرسال وفود إلى باريس.</li>
+
+<li>تقديم العريضة إلى محمد الناصر باي.</li>
+
+</ul>
+
+</div>
+
+
+<div class="activity">
+
+<h3>النشاط الرابع: دراسة شخصية تاريخية</h3>
+
+<div class="question">
+
+اختر إحدى الشخصيات التالية:
+
+<strong>عبد العزيز الثعالبي – علي باش حامبة – محمد علي الحامي</strong>
+
+ثم أنجز بطاقة تعريف تتضمن:
+
+</div>
+
+<ul>
+
+<li>الاسم.</li>
+
+<li>الدور في الحركة الوطنية.</li>
+
+<li>نوع النضال الذي ساهم فيه.</li>
+
+<li>أهم إنجازاته أو تحركاته.</li>
+
+</ul>
+
+</div>
+
+
+<div class="activity">
+
+<h3>النشاط الخامس: نشاط تركيبي</h3>
+
+<div class="question">
+
+اعتمادا على مكتسباتك، حرر فقرة تاريخية تبرز فيها:
+
+<strong>
+الظروف التي ساعدت على تطور الحركة الوطنية التونسية في العشرينات، ثم بين أهم مظاهر النضال السياسي والنقابي ضد الاستعمار الفرنسي.
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<button class="print-btn" onclick="window.print()">
+
+🖨️ طباعة الدرس
+
+</button>
+
+
+<footer>
+
+إعداد الأستاذ رياض سليمي | السنة الدراسية 2026 / 2027
+
+</footer>
+
+</div>
+
+</body>
+  </html>
